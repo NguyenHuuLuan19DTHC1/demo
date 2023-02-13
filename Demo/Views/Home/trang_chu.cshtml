@@ -1,0 +1,142 @@
+﻿@*
+    @{
+        ViewBag.title = "Trang chủ";
+        Layout = null;
+    }
+
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Trang chủ</title>
+        <link rel="stylesheet" href="~/Content/css/student.css" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <a href="https://www.hutech.edu.vn/"><img src="~/Content/img/student/img_Headtet.gif" /></a>
+            </header>
+            <nav>
+                @using (Html.BeginForm())
+                {
+                    @Html.ValidationSummary(true)
+
+                    <form action="">
+                        <input type="submit" value="Đăng nhập" style="background:none; color: white">
+                        <input type="password" placeholder="Mật khẩu" name="password">
+                        <input type="text" placeholder="Mã số sinh viên" name="username">
+                    </form>
+                    <style>
+                        input {
+                            font-size: 20px;
+                            margin-right: 1%;
+                            margin-top: 1%;
+                            font-weight: bold;
+                            float: right;
+                        }
+                    </style>
+    }
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="http://nopdon.daotao.hutech.edu.vn/">Nộp đơn</a></li>
+                        <li><a href="http://daotao.hutech.edu.vn/">Đào tạo</a></li>
+                        <li><a href="https://sinhvien.hutech.edu.vn/#/sinhvien/login/login">Sinh viên</a></li>
+                        <li><a href="http://e-graduate.hutech.edu.vn/portal">E-Learing</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="slide">
+                <img src="~/Content/img/student/hutecher.jpg" style="width: 100%; height:10%" />
+            </div>
+            <article>
+                <h3>TIN TỨC MỚI</h3>
+                <div class="new_list">
+                    <div class="new_item">
+                        <h4>HUTECH sẽ chính thức ra mắt series định hướng nghề nghiệp “Ra chơi, hóng chuyện nghề” vào ngày 03/01/2023</h4>
+                        <img src="~/Content/img/student/item.png" alt="" />
+                        <div class="content">
+                            <p>Ngày 03/01 tới đây, Trường Đại học Công nghệ TP.HCM (HUTECH) sẽ chính thức ra mắt series “Ra chơi, hóng chuyện nghề” số đầu tiên với chủ đề “Người hot, ngành hot trong thời đại 4.0”.  Giúp các bạn học sinh hoạch định bản thân và lựa chọn nghề nghiệp phù hợp cho tương lai.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="new_item">
+                        <h4>Khoa Marketing - Kinh doanh quốc tế tổ chức Hội thảo Khoa học cấp Thành phố ESR2023 “Marketing giai đoạn bình thường mới</h4>
+                        <img src="~/Content/img/student/item.png" alt="" />
+                        <div class="content">
+                            <p>Sáng ngày 05/01, Khoa Marketing - Kinh doanh quốc tế Trường Đại học Công nghệ TP.HCM (HUTECH) phối hợp cùng Trường Đại học Công nghiệp Thực phẩm TP.HCM và Trường Đại học Tài chính - Marketing tổ chức Hội thảo Khoa học cấp Thành phố ESR2023 với chủ đề “Marketing giai đoạn bình thường mới”.</p>
+                        </div>
+                    </div>
+
+                    <div class="new_item">
+                        <h4>Trường đại học Công nghệ TP.HCM - HUTECH sẽ tổ chức chương trình "Vui Tết xa nhà" cho các bạn sinh viên xa nhà vào ngày 12/01 tới</h4>
+                        <img src="~/Content/img/student/item.png" alt="" />
+                        <div class="content">
+                            <p>Nằm trong chuỗi hoạt động chiến dịch “Xuân tình nguyện HUTECH 2023”, ngày 12/01 tới đây (nhằm 21 tháng Chạp), Đoàn Thanh niên - Hội Sinh viên Trường Đại học Công nghệ TP.HCM (HUTECH) sẽ tổ chức chương trình “Vui Tết xa nhà” cho sinh viên khó khăn, sinh viên không có điều kiện về quê ăn Tết.</p>
+                        </div>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+            </article>
+            <article>
+                <h3>THÀNH TÍCH</h3>
+                <div class="new_list">
+                    <div class="new_item">
+                        <h4>HUTECH sẽ chính thức ra mắt series định hướng nghề nghiệp “Ra chơi, hóng chuyện nghề” vào ngày 03/01/2023</h4>
+                        <img src="~/Content/img/student/item.png" alt="" />
+                        <div class="content">
+                            <p>Ngày 03/01 tới đây, Trường Đại học Công nghệ TP.HCM (HUTECH) sẽ chính thức ra mắt series “Ra chơi, hóng chuyện nghề” số đầu tiên với chủ đề “Người hot, ngành hot trong thời đại 4.0”.  Giúp các bạn học sinh hoạch định bản thân và lựa chọn nghề nghiệp phù hợp cho tương lai.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="new_item">
+                        <h4>Khoa Marketing - Kinh doanh quốc tế tổ chức Hội thảo Khoa học cấp Thành phố ESR2023 “Marketing giai đoạn bình thường mới</h4>
+                        <img src="~/Content/img/student/item.png" alt="" />
+                        <div class="content">
+                            <p>Sáng ngày 05/01, Khoa Marketing - Kinh doanh quốc tế Trường Đại học Công nghệ TP.HCM (HUTECH) phối hợp cùng Trường Đại học Công nghiệp Thực phẩm TP.HCM và Trường Đại học Tài chính - Marketing tổ chức Hội thảo Khoa học cấp Thành phố ESR2023 với chủ đề “Marketing giai đoạn bình thường mới”.</p>
+                        </div>
+                    </div>
+
+                    <div class="new_item">
+                        <h4>Trường đại học Công nghệ TP.HCM - HUTECH sẽ tổ chức chương trình "Vui Tết xa nhà" cho các bạn sinh viên xa nhà vào ngày 12/01 tới</h4>
+                        <img src="~/Content/img/student/item.png" alt="" />
+                        <div class="content">
+                            <p>Nằm trong chuỗi hoạt động chiến dịch “Xuân tình nguyện HUTECH 2023”, ngày 12/01 tới đây (nhằm 21 tháng Chạp), Đoàn Thanh niên - Hội Sinh viên Trường Đại học Công nghệ TP.HCM (HUTECH) sẽ tổ chức chương trình “Vui Tết xa nhà” cho sinh viên khó khăn, sinh viên không có điều kiện về quê ăn Tết.</p>
+                        </div>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+            </article>
+            <footer>
+                Xây dựng và phát triển bởi Trường Đại Học Công Nghệ TPHCM
+            </footer>
+        </div>
+    </body>
+    </html>*@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>My First Heading</h1>
+
+    <p>My first paragraph.</p>
+
+    <script>
+                const Http = new XMLHttpRequest();
+                const url='https://localhost:44381';
+                Http.open("GET", url);
+                Http.send();
+
+                Http.onreadystatechange = (e) => {
+                console.log(Http.responseText)
+                }
+
+    </script>
+
+</body>
+</html>
